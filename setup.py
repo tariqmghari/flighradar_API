@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Flight radar unofficial API',
+    name='Flight_radar_API_unofficial',
     version='1.0',
     packages=find_packages(),
     install_requires=[
@@ -9,5 +9,5 @@ setup(
     ],
     author='Tariq',
     description='Library to get data from flight_radar website',
-    url='https://github.com/tariqmghari/flighradar_APIy',
+    url='https://github.com/tariqmghari/flighradar_API',
 )
