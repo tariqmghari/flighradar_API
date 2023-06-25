@@ -1,8 +1,8 @@
-from requests_handler import requests_handler
-from flights import Flight
-from airlines import airlines
-from airports import airport
-from flights_details import flight_details
+from .requests_handler import requests_handler
+from .flights import Flight
+from .airlines import airlines
+from .airports import airport
+from .flights_details import flight_details
 class FRadarAPI:
     real_time_flight_tracker_data_url = "https://data-cloud.flightradar24.com/zones/fcgi/feed.js"
     airlines_url="https://www.flightradar24.com/_json/airlines.php"
@@ -106,7 +106,3 @@ class FRadarAPI:
         for airport_x in airports_request["rows"]:
             airports_list.append(airport(airport_x["name"],airport_x["iata"],airport_x["icao"],airport_x["lat"],airport_x["lon"],airport_x["country"],airport_x["alt"]))
         return airports_list
-
-fradarapi = FRadarAPI()
-fradarapi.get_airports()
-#flight_data=fradarapi.get_flights()
