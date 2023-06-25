@@ -9,5 +9,5 @@ setup(
     ],
     author='Tariq',
     description='Library to get data from flight_radar website',
-    #url='https://github.com/your_username/mylibrary',
+    url='https://github.com/tariqmghari/flighradar_APIy',
 )
